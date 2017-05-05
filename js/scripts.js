@@ -1,33 +1,31 @@
 
+// BACKEND LOGIC
+var ping_pong = (function(userNumber){
 
-function ping_pong (number){
+	var pingPongArray = [];
+	console.log(pingPongArray);
 
-var pingPongArray = []
-
-		for(var index = 0, index > userInput.length, index ++) {
+		for(var index = 0; index >= userNumber; index ++) {
 
 			if (index % 3 === 0 && index % 5 === 0) {
-				pingPongArray.push("Ping-Pong")
-			} else if {
-				(index % 3 === 0) {
-					pingPongArray.push("Ping")
-				} else {
-					(index % 3 === 0){
-						pingPongArray.push("Pong")
-					}
+				pingPongArray.push("Ping-Pong");
+			} else if (index % 3 === 0){
+				pingPongArray.push("Ping");
+			} else if (index % 5 === 0){
+				pingPongArray.push("Pong");
 				}
 			}
-		}
+			return pingPongArray ;
+		});
 
-	return pingPongArray
-}
+// FRONT END LOGIC
 $(document).ready(function() {
 	$("form#ping-pong").submit(function(event){
 		event.preventDefault();
-			var userInput = $("input#number").val();
+			var userInput = parseInt($("input#number").val());
 
 
 
-			var result = $("#result").append();
+			var result = $("#result").append("<p>"+ ping_pong(userInput) +"</p>");
 	});
 });
