@@ -5,7 +5,8 @@ var array = function(number) {
 	var pingPongArray = [];
 	console.log(pingPongArray);
 
-		for(var i = 0; i <= number; i++) {
+		for(var i = 0; i <= number; i ++) {
+
 			// FOR NON POSITIVE NUMBERS DO NOTHING AND RETURN UNDEFINED
 				if (number > 0) {
 					// IF THE USERS INPUT IS DIVISIBLE BY 15 PUSH PING-PONG INTO THE ARRAY
@@ -23,10 +24,10 @@ var array = function(number) {
 					}
 
 				// NEW ARRAY THAT CHOOSES THE END OF THE ARRAY TO BE STORED IN pingPongArray
-				// var result = pingPongArray.splice(-1);
-				// console.log(result);
+				var result = pingPongArray.splice(-1,1);
+				console.log(result);
 				}
-				return pingPongArray;
+				return result;
 			}
 		}
 
@@ -34,9 +35,9 @@ var array = function(number) {
 $(document).ready(function() {
 	$("form#ping_pong").submit(function(event){
 		event.preventDefault();
-			var userInput = parseInt($("input#number").val());
+			var number = $("input#number").val();
 
-
-			$("#result").append("<p>"+ array(userInput) +"</p>");
+			$("#result").append("<p>"+ array(number) +"</p>");
+				$("p").prev().remove();
 	});
 });
