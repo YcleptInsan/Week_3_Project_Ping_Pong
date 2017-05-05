@@ -10,7 +10,7 @@ var array = function(number) {
 			// FOR NON POSITIVE NUMBERS DO NOTHING AND RETURN UNDEFINED
 				if (number > 0) {
 					// IF THE USERS INPUT IS DIVISIBLE BY 15 PUSH PING-PONG INTO THE ARRAY
-					if ((i % 15 === 0 && i % 15 === 0)) {
+					if ((i % 3 === 0 && i % 5 === 0)) {
 						pingPongArray.push("Ping-Pong");
 						//Else IF THE USERS INPUT IS DIVISIBLE BY 3 PUSH PING INTO THE ARRAY
 					} else if (i % 3 === 0) {
@@ -24,7 +24,7 @@ var array = function(number) {
 					}
 
 					var result = pingPongArray.splice(-1, 1);
-				// NEW ARRAY THAT CHOOSES THE END OF THE ARRAY TO BE STORED IN pingPongArray
+				// NEW ARRAY THAT CHOOSES THE END OF THE ARRAY TO BE STORED IN variable result
 
 				}
 			}

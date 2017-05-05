@@ -29,17 +29,14 @@ else if index % 5 === 0
 splice the existing array so that the array starts from the end of the entry.
 		input: [1,......100]
 		output: [100, ......1]
-append result and remove previous user inputted result. 
+append result and remove previous user inputted result.
 
-This website demonstrates my knowledge of using forms and validation states of the forms. It also displays using arrays as a means of temporary storage of user input to then be used to determine final output.
 
 By Nick Wise
 
 Description
 
-tags used p,li,ol,ul,span,div,em,strong,a,img
-styled nav pills with bootstrap and ul styling "text -center".
-Cascading styling was used along with specificity in the css styles document.  
+This website demonstrates my knowledge of using forms and validation states of the forms. It also displays using arrays as a means of temporary storage of user input to then be used to determine final output.
 Setup/Installation Requirements
 
 Download clone from my Github account https://github.com/YcleptInsan to your Desktop. open all files in your favorite text editor to edit the code.
